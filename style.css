@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+/* importamos desde google fonts la fuente que deseamos usar */
+body{
+    background: rgb(255, 255, 255); /*Color del background  */
+    font-family: 'Montserrat', sans-serif;/*la fuente que queremos usar , y otra por si no esta disponible */
+    color:rgb(61, 45, 150) ;
+}
+
+#contenedor{
+    width: 900px;/* tamaño de nuestro cuadrado */
+    height: 500px;
+    text-align: center;/* el contenedor siempre ira en el centro */
+    /* las 3 lineas de abajo es para el posicionamiento de div  */
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 50px;/*curvatura del cuadrado  */
+    overflow: hidden; 
+    box-shadow: 0 14px 28px rgba(15, 15, 15, 0.25), 
+      0 10px 10px rgba(7, 7, 7, 0.22);
+}
+
+
+
+#calculadora{
+    background: rgb(81, 145, 255);
+    /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#detalle{
+    background:rgb(61, 45, 150);
+    /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: #f6f5f7;
+}
+
+
+.contenido{
+    /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 40px;
+}
+
+input {
+	width: 70%;
+    padding: 12px 15px;
+    border: rgb(61, 45, 150);
+    background-color: #eee;
+}
+
+button {
+  font-size: 15px;
+	font-weight: bold;
+	padding: 12px 45px;
+	border-radius: 30px;
+	background-color: rgb(61, 45, 150);
+	border: 1px solid rgb(5, 5, 5);
+	color: #FFFFFF;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: transform 20ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+#error{
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+.resultado{
+    color: #0A81D1;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+    display: none;
+}

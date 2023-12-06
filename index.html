@@ -1,24 +1,37 @@
 <!--- Nikol Parfiñuk  -->
-<!DOCTYPE html> <!---especificamos la versión de html -->
+<!DOCTYPE html>
+<!--Es importante que cuando hagamos una pagina web, tengamos en cuenta que no sabemos que navegador utiliza el usuario, utilizamos la etiqueta <!DOCTYPE html> para que incluso los usuarios con los navegadores mas viejos puedan ver nuestra web-->
 <html>
-	<head> 
-        <title>Calculadora de hidratación</title> <!---Titulo de la pagina -->
+    <head>
+        <link rel="stylesheet" href="./style.css" />
+        <!-- Esto indica que usa el archivo css -->
+        <script src="script.js" defer></script>
+        <title>Calculadora de hidratación</title>
+        <!-- Titulo de la pestaña -->
     </head>
-	<body>
-        <div>
-            <div>
+<body>
+    <div id="contenedor">
+        <div id="calculadora">
+            <div class="contenido">
                 <h1>Hidratación Basal</h1>
-                <input type="number" placeholder="Peso en kg" /> <!--- Un formulario para obtener datos -->
+                <p >Completa todos los datos</p>
+                <input type="number" placeholder="Peso en kg" />
+                <p>* Debe completar todos los datos</p>
                 <button>Calcular</button>
+                <p>71cc/h</p>
+                <p>m+m/2 : 105cc/h</p>
             </div>
-            <div>
+        </div>
+        <div id="detalle">
+            <div class="contenido">
                 <h1>¿Como se calcula?</h1>
-                <ul><!--- se crea una lista desordenada  -->
+                <ul>
                     <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
                     <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
                     <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
                 </ul>
             </div>
         </div>
-    </body>
+    </div>
+  </body>
 </html>
