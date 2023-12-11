@@ -1,4 +1,3 @@
-<!--- Nikol Parfiñuk  -->
 <!DOCTYPE html>
 <!--Es importante que cuando hagamos una pagina web, tengamos en cuenta que no sabemos que navegador utiliza el usuario, utilizamos la etiqueta <!DOCTYPE html> para que incluso los usuarios con los navegadores mas viejos puedan ver nuestra web-->
 <html>
@@ -15,23 +14,31 @@
             <div class="contenido">
                 <h1>Hidratación Basal</h1>
                 <p >Completa todos los datos</p>
-                <input type="number" placeholder="Peso en kg" />
-                <p>* Debe completar todos los datos</p>
-                <button>Calcular</button>
-                <p>71cc/h</p>
-                <p>m+m/2 : 105cc/h</p>
+                <input id="pesokg" type="number" placeholder="Peso en kg" />
+                <p id="error"></pid> * Debe completar todos los datos</p>
+                <button id="calcular">Calcular</button>
+                <p id="dia"> </p>
+                <p id="flu"></p>
+                <p id="man"></p>
             </div>
         </div>
         <div id="detalle">
-            <div class="contenido">
-                <h1>¿Como se calcula?</h1>
-                <ul>
+            <div id="contenido">
+                <h1>¿Como se calculo?</h1>
+                <ul id="metodohs">
+                    <li>Con el método Holliday-Segar: </li>
                     <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
                     <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
                     <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
+                </ul>
+                <ul id="metodosc">
+                    <li>Con el método de Superficie Corporal :  </li>
+                    <li>Cuando el niño pesa mas de 30kg</li>
+                    <li>Se multiplica SC (Superficie Corporal) por 2000 o 1500 para hallar el volumen diario</li>
+                    <li>Superficie Corporal es igual a ( (peso * 4) + 7) / (peso + 90) </li>
                 </ul>
             </div>
         </div>
     </div>
   </body>
-</html>
+  

@@ -4,12 +4,14 @@ body{
     background: rgb(255, 255, 255); /*Color del background  */
     font-family: 'Montserrat', sans-serif;/*la fuente que queremos usar , y otra por si no esta disponible */
     color:rgb(61, 45, 150) ;
+
+  
 }
 
 #contenedor{
     width: 900px;/* tamaño de nuestro cuadrado */
     height: 500px;
-    text-align: center;/* el contenedor siempre ira en el centro */
+    text-align: center; /* el contenedor siempre ira en el centro */
     /* las 3 lineas de abajo es para el posicionamiento de div  */
     position: absolute;
     inset: 0;
@@ -37,16 +39,19 @@ body{
     height: 100%;
     float: left;
     color: #f6f5f7;
+    
 }
 
 
-.contenido{
+#contenido{
     /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
+    text-align:start;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     overflow: hidden;
     padding: 40px;
+    
 }
 
 input {
@@ -74,7 +79,7 @@ button:active {
 }
 
 #error{
-    color: red;
+    color: rgb(119, 22, 22);
     font-weight: bold;
     display: none;
 }
